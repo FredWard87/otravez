@@ -1,0 +1,236 @@
+.audits-container {
+    padding: 15px;
+    color: #333;
+    font-family: Arial, sans-serif;
+}
+
+.dropdown {
+    position: relative;
+}
+.print-button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+  
+  .print-button:hover {
+    background-color: #0056b3;
+  }
+
+.dropdown-togglede {
+    background-color: #28a745;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    width: 100%;
+}
+
+.dropdown-menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-menu.show {
+    display: flex;
+}
+
+.month-option {
+    padding: 8px 14px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.month-option:hover {
+    background-color: #f1f1f1;
+}
+
+.month-option.selected {
+    background-color: #28a745;
+    color: white;
+}
+
+.dropdown-toggle:focus {
+    outline: none;
+}
+
+.year-container {
+    margin-bottom: 30px;
+}
+
+.table-chart-container-audits {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 1%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    page-break-inside: avoid; /* Ensure sections do not break inside */
+}
+
+.section {
+    flex: 1 1 calc(50% - 20px); /* Adjust for better spacing */
+    min-width: 200px;
+    margin: 10px;
+    page-break-inside: avoid; /* Ensure sections do not break inside */
+}
+
+.section table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.section th,
+.section td {
+    border: 1px solid #ccc;
+    padding: 6px;
+    text-align: left;
+}
+
+.section th {
+    background-color: #5fed2b;
+}
+
+.chart-container-audits,
+.pie-chart-container-audits {
+    width: 100%;
+    height: 220px;
+    margin-top: 20px;
+    page-break-inside: avoid; /* Ensure charts do not break inside */
+}
+
+.no-data-container {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+@media (max-width: 1024px) {
+    .section {
+        flex: 1 1 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .table-chart-container-audits {
+        flex-direction: column;
+    }
+
+    .section {
+        flex: 1 1 100%;
+        min-width: 100%;
+    }
+
+    .chart-container-audits,
+    .pie-chart-container-audits {
+        height: auto;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 470px) {
+    .audits-container {
+        padding: 9px;
+    }
+
+    .dropdown-togglede {
+        font-size: 15px;
+        padding: 7px;
+    }
+
+    .no-data-container {
+        padding: 9px;
+    }
+
+    .table-chart-container-audits {
+        padding: 9px;
+    }
+
+    .section table {
+        font-size: 13px;
+    }
+
+    .month-option {
+        padding: 7px;
+    }
+}
+
+@media print {
+    body * {
+        visibility: hidden;
+    }
+    
+    .print-section, .print-section * {
+        visibility: visible;
+    }
+    
+    .print-section {
+        position: relative;
+        break-inside: avoid;
+        page-break-inside: avoid;
+        page-break-after: always;
+    }
+    
+    .table-chart-pair {
+        display: flex;
+        flex-direction: column;
+        page-break-inside: avoid;
+        margin-bottom: 20px;
+    }
+    
+    .table-chart-pair table {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    
+    .chart-container-audits {
+        width: 100%;
+        height: auto; /* Ajustar la altura para adaptarse mejor a la página */
+    }
+    
+    .table-chart-container-audits {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        page-break-inside: avoid;
+    }
+    
+    .section {
+        flex: 1 1 calc(50% - 20px);
+        page-break-inside: avoid;
+    }
+    
+    @page {
+        size: Letter landscape; /* Cambia a landscape si prefieres esa orientación */
+        margin: 2cm; /* Ajusta los márgenes a 2cm */
+    }
+}
+
+/* Opcional: Ajustar el tamaño de fuente y los márgenes para mejorar la legibilidad */
+.table-chart-container-audits,
+.section table,
+.section th,
+.section td {
+    font-size: 12px; /* Ajusta el tamaño de fuente */
+}
+
+.section {
+    margin: 5px; /* Ajusta los márgenes */
+}

@@ -1,0 +1,310 @@
+.programas-container {
+  position: relative;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.programas-container-ext {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  background-color: #FFFD70;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.programas-container h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.programas-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.programas-container form > div {
+  margin-bottom: 15px;
+}
+
+.programas-container label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.programas-container input[type="text"] {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.programas-container button {
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #00B096;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.programas-container button[type="button"] {
+  background-color: #ffffff;
+  border: 2px solid #00B096;
+  color: #00B096;
+}
+
+.programas-container button:hover[type="button"] {
+  background-color:  #02fca8;
+  color: #000000;
+}
+
+.programas-container button:hover {
+  background-color:  #006d5d;
+}
+
+.programas-container textarea {
+  width: 99%; /* Ajusta el ancho según sea necesario */
+  height: 90px; /* Ajusta la altura según sea necesario */
+}
+
+.centrado-pro {
+  margin: 7rem auto 0;
+}
+
+/* Estilos adicionales para el área de arrastre y soltura de archivos */
+.file-drag-drop {
+  padding: 20px;
+  border: 2px dashed #ccc;
+  border-radius: 4px;
+  text-align: center;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.file-drag-drop:hover {
+  border-color: #00B096;
+  background-color: #f0f0f0;
+}
+
+.file-drag-drop {
+  padding: 20px;
+  border: 2px dashed #ccc;
+  border-radius: 4px;
+  text-align: center;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.file-drag-drop:hover {
+  border-color: #00B096;
+  background-color: #f0f0f0;
+}
+
+.align-right {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 15px;
+}
+
+.datos-container-prog-2 {
+  margin-bottom: 20px;
+  margin: 2rem auto 0;
+  width: 68%;
+  max-width: 100%;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.header-container-datos-prog {
+  text-align: center; 
+  margin-bottom: 10px; 
+}
+
+.header-container-datos-prog button {
+  padding: 10px 20px;
+  width: 100%;
+  font-size: 16px;
+  background-color: #00B096; 
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+@media (max-width: 400px) {
+  .datos-container-prog-2 {
+    width: 80%;
+  }
+}
+
+@media (max-width: 900px) {
+  .datos-container-prog-2 {
+    width: 80%;
+  }
+}
+
+.tabla-programa table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.tabla-programa table, th, td {
+  border: 1px solid #ddd;
+}
+
+.tabla-programa th, td {
+  padding: 8px;
+  text-align: left;
+}
+
+.tabla-programa th {
+  background-color: #BFFF99;
+}
+
+
+
+.header-container-datos-prog button:hover {
+  background-color: #35b32d; 
+}
+
+.list-programa{
+  text-align: center;
+}
+
+
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Ancho del modal */
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Estilos para el modal de edición */
+.edit-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 600px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.edit-modal h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+.edit-modal form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.edit-modal textarea {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  resize: vertical;
+  min-height: 100px;
+  font-size: 16px;
+}
+
+.edit-modal button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  background-color: #00B096;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.edit-modal button:hover {
+  background-color: #008977;
+}
+
+.edit-modal .button-group {
+  display: flex;
+  justify-content: space-between;
+}
+
+.edit-modal .button-group button {
+  flex: 1;
+  margin: 0 5px;
+}
+
+.edit-modal .button-group button:first-child {
+  margin-left: 0;
+}
+
+.edit-modal .button-group button:last-child {
+  margin-right: 0;
+}
+
+/* Estilos para el fondo oscuro detrás del modal */
+.edit-modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+
+.button-ed-pro button{
+  width: 7em;
+  height: 2em;
+  margin-left: 51.2rem;
+  border: none;
+  background-color: #3f62ff;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.button-ed-pro button:hover{
+  background-color: #00da2f;
+  color: #ffffff;
+}

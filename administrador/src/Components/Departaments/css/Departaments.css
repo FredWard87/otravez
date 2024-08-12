@@ -1,0 +1,139 @@
+body {
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .titulo {
+    text-align: center;
+    margin-top: 20px;
+    color: #333;
+    font-size: 24px;
+  }
+  
+  .contenedor {
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #99ff99;
+  }
+  
+  .boton-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .boton-verde {
+    background-color: #28a745;
+    border-color: #28a745;
+    color: white;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+  
+  .boton-verde:hover {
+    background-color: #218838;
+    border-color: #1e7e34;
+  }
+  
+  .boton-verde:focus,
+  .boton-verde:active {
+    outline: none;
+    box-shadow: none;
+  }
+  
+  .filtro {
+    max-width: 100%;
+    border-radius: 20px;
+    padding: 10px;
+  }
+  
+  .table {
+    width: 100%;
+    margin: 0 auto;
+    background-color: white;
+  }
+  
+  .table th {
+    background-color: #28a745;
+    color: white;
+    text-align: center;
+    padding: 15px;
+  }
+  
+  .table td {
+    text-align: center;
+    padding: 15px;
+  }
+  
+  .modal-personalizado .modal-header,
+  .modal-actualizar .modal-header {
+    background-color: #28a745;
+    color: #fff;
+  }
+  
+  .modal-footer {
+    justify-content: space-between;
+  }
+  
+  .modal-title {
+    font-size: 20px;
+  }
+  
+  .modal-body {
+    padding: 20px;
+  }
+
+  .button-edit-dep{
+    background-color: #28a745;
+    color: #fff;
+    cursor: pointer;
+
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 14px;
+    border: none;
+  }
+
+  .button-edit-dep:hover{
+    background-color: #3ae963;
+  }
+
+  .button-eli-dep{
+    background-color: #a72828;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 14px;
+    border: none;
+  }
+
+  .button-eli-dep:hover{
+    background-color: #e93a3a;
+  }
+  
+  .button {
+    margin-right: 5px;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+  
+  button:last-child {
+    margin-right: 0;
+  }
+  
+  @media (max-width: 768px) {
+    .table {
+      font-size: 12px;
+    }
+  
+    .filtro,
+    .boton-verde,
+    .button {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  }

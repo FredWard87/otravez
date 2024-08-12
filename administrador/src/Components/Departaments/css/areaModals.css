@@ -1,0 +1,97 @@
+.custom-modal .modal-content {
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    overflow: hidden;
+  }
+  
+  .custom-modal-header {
+    background-color: #28a745;
+    color: #fff;
+    border-bottom: none;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  
+  .custom-modal-title {
+    font-weight: bold;
+    font-size: 1.5em;
+  }
+  
+  .custom-modal-body {
+    padding: 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .custom-modal-footer {
+    background-color: #f9f9f9;
+    border-top: none;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  
+  .custom-modal-footer .btn-primary {
+    background-color: #28a745;
+    border-color: #28a745;
+  }
+  
+  .custom-modal-footer .btn-secondary {
+    background-color: #6c757d;
+    border-color: #6c757d;
+  }
+  
+  .area-input-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .area-input-group .btn-danger {
+    flex-shrink: 0;
+  }
+  
+  .titulo {
+    font-size: 2em;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .contenedor {
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .boton-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .boton-verde {
+    background-color: #28a745;
+    border: none;
+  }
+  
+  .filtro {
+    width: 300px;
+  }
+  
+  .table {
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+  }
+  
+  .table th, .table td {
+    vertical-align: middle;
+    text-align: center;
+  }
+  
+  .table th {
+    background-color: #28a745;
+    color: #fff;
+  }
+  
+  .button {
+    margin: 0 5px;
+  }

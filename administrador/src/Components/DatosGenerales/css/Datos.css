@@ -1,0 +1,322 @@
+.datos-container {
+  width: 60%;
+  max-width: 200%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  min-height: 31.9rem;
+  position: relative;
+}
+
+@media (max-width: 900px) {
+  .datos-container {
+    width: 80%;
+  }
+}
+
+.datos-container2 {
+  display: flex;
+  margin: 2rem auto 0;
+  width: 56.9rem;
+  max-width: 57rem;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo-empresa {
+  height: 20%;
+  width: 30vh;
+  display: block;
+  border-radius: 10px;
+  margin: 0 0 20px 0; 
+}
+
+.header-container-datos {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.header-container-datos2 {
+  position: absolute; 
+  bottom: 20px; 
+  right: 20px; 
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.button-group-datos {
+  display: flex;
+  gap: 10px;
+}
+
+.form-group-datos {
+  margin-bottom: 15px;
+}
+
+.form-group-datos label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-group-datos input,
+.form-group-datos select {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.btn-registrar-datos {
+  background-color: #4c4e4e;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-registrar-datos:hover {
+  background-color: #00e7c5;
+  color: #000000;
+}
+
+.btn-registrar-datos:not(:last-child) {
+  margin-right: 10px;
+}
+
+table {
+  width: 56.8rem;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+table, th, td {
+  border: 1px solid #ddd;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #BFFF99;
+}
+
+th.conformity-header {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.registro-form-datos {
+  width: 70%;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20px;  
+  background-color: #D9D9D9;  
+  border-radius: 8px; 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);  
+}
+
+@media (max-width: 900px) {
+  .registro-form-datos {
+    width: 83%;
+  }
+}
+
+.form-dates-datos {
+  display: flex;
+  gap: 20px; 
+}
+
+.form-dates-datos .form-group-datos {
+  flex: 1;
+}
+
+@media (max-width: 600px) {
+  .form-dates-datos {
+    gap: 0px;
+    flex-direction: column;
+  }
+}
+
+/*Botones de navegacion*/
+
+.navigation-buttons {
+  display: flex;
+  margin-left: 19%;
+}
+
+@media (max-width: 900px) {
+  .navigation-buttons {
+    margin-left: 9%;
+  }
+}
+
+@media (max-width: 750px) {
+  .navigation-buttons {
+    margin-left: 8%;
+  }
+}
+
+@media (max-width: 380px) {
+  .navigation-buttons {
+    margin-left: 6%;
+  }
+
+  .datos-container2 {
+    display: flex;
+    margin: 2rem auto 0;
+    width: 36rem;
+    max-width: 57rem;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .logo-empresa {
+    height: 10%;
+    width: 25vh;
+  }
+
+  table {
+    width: 36rem;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+}
+
+.navigation-buttons button {
+  background-color: #f1f1f1;
+  border-radius: 10px 10px 0px 0px;
+  border: 1px solid #ddd;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 14%;
+  height: 2.5rem;
+}
+
+@media (max-width: 950px) {
+  .navigation-buttons button {
+    padding: 10px 7px;
+    width: 20%;
+    height: 2rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .navigation-buttons button {
+    padding: 10px 7px;
+    width: 30%;
+    height: 2rem;
+  }
+}
+
+.navigation-buttons button.active {
+  background-color: #00B096;
+  color: #fff;
+}
+
+.h3-small-margin {
+  margin-left: 10%;
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+
+.centrado{
+  margin: 4vh auto 0;
+}
+
+@media (min-width: 1440px) {
+  .centrado {
+    margin: 9vh auto 0;
+  }
+} 
+
+@media (max-width: 886px) {
+  .centrado {
+    margin: 4rem auto 0;
+  }
+} 
+
+/*Areas*/
+.selected-areas {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 10px; 
+}
+
+.selected-area {
+  display: flex;
+  align-items: center; 
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+/*Programas*/
+
+.selected-programs {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; 
+}
+
+.selected-program {
+  display: flex;
+  align-items: center; 
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.program-name {
+  margin: 0;
+}
+
+.remove-button {
+  background-color: #ff5c5c;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.remove-button:hover {
+  background-color: #ff1c1c;
+}
+
+.form-group-datos-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; 
+}
+
+@media (max-width: 400px) {
+
+  .form-group-datos-container {
+    gap: 0px; 
+  }
+  
+}
+
+.form-group-datos {
+  flex: 1;
+  min-width: 150px;
+}

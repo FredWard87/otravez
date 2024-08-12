@@ -1,0 +1,68 @@
+.pending-audits-calendar {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .filters input {
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    flex: 1;
+    max-width: 250px;
+  }
+  
+  .filters input[type="date"] {
+    max-width: 150px;
+  }
+  
+  .pending-audits-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .pending-audits-table th,
+  .pending-audits-table td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 12px;
+  }
+  
+  .pending-audits-table th {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .pending-audits-table td {
+    background-color: white;
+  }
+  
+  .pending-audits-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .pending-audits-table tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .pending-audits-table div {
+    margin-bottom: 5px;
+  }
+  
+  @media (max-width: 768px) {
+    .filters {
+      flex-direction: column;
+    }
+  
+    .filters input {
+      max-width: 100%;
+    }
+  }

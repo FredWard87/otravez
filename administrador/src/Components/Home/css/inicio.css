@@ -1,0 +1,48 @@
+  .inicio-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    transition: background-image 1s ease-in-out;
+  }
+
+  .inicio-container.fade-in {
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+  }
+
+  .inicio-container.fade-out {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  }
+
+  .inicio-container h1 {
+    color: white;
+    font-size: 6em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+
+  @media (max-width: 600px) {
+    .inicio-container h1 {
+
+      font-size: 4em;
+    }
+    
+
+  }
+
+  @media (max-width: 400px) {
+    .inicio-container h1 {
+      font-size: 3.5em;
+    }
+  }
+
+  .user-name{
+    color: white;
+    font-size: 3em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }

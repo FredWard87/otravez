@@ -1,0 +1,122 @@
+.audit-calendar-container {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+  }
+  
+  .audit-details-container {
+    flex: 1;
+    width: 100%;
+    overflow-x: auto;
+  }
+  
+  .filters-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: nowrap; /* Prevent wrapping to a new line */
+    margin-bottom: 20px;
+    overflow-x: auto; /* Allow horizontal scrolling if necessary */
+  }
+  
+  .filters-container .MuiFormControl-root {
+    background-color: #e0e0e0; /* Background color for filters */
+    border-radius: 5px; /* Rounded corners */
+  }
+  
+  /* Add some margin between the filters */
+  .filter-control {
+    min-width: 200px;
+    margin: 5px;
+  }
+  
+  .audit-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .audit-table th,
+  .audit-table td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 12px;
+  }
+  
+  .audit-table th {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .audit-table td {
+    background-color: white;
+  }
+  
+  .audit-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .audit-table tbody tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .audit-table ul {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .audit-table li {
+    margin: 5px 0;
+  }
+  
+  .red {
+    background-color: #ffcccc; /* Light red background */
+    color: red;
+  }
+  
+  .orange {  
+    background-color: #ffe0b3; /* Light orange background */
+    color: orange;
+  }
+  
+  .yellow {
+    background-color: #ffff99; /* Light yellow background */
+    color: #cccc00; /* Dark yellow color */
+  }
+  
+  .green {
+    background-color: #ccffcc; /* Light green background */
+    color: green;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .audit-table th,
+    .audit-table td {
+      padding: 8px;
+    }
+    
+    .audit-calendar-container {
+      padding: 10px;
+    }
+    .filters-container .MuiFormControl-root {
+      padding: 5px; /* Adjust padding on small screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .audit-table th,
+    .audit-table td {
+      padding: 6px;
+    }
+    
+    .audit-calendar-container {
+      padding: 5px;
+    }
+  
+    .audit-details-container {
+      margin-top: 10px;
+    }
+    .filters-container .MuiFormControl-root {
+      padding: 5px; /* Adjust padding on small screens */
+    }
+  }

@@ -1,0 +1,36 @@
+.fixed-modal {
+  position: fixed !important;
+  top: 0% !important;
+  left: 50% !important;
+  width: 100% !important;
+  height: 100% !important;
+  transform: translateX(-50%) !important;
+  z-index: 100 !important;
+}
+
+.camera-button {
+  display: flex;
+  position: fixed;
+  background-color: #df1212;
+  color: #ffffff;
+  border-color: #ffffff;
+  padding: 2%;
+  border-radius: 50%;
+  top: 50%;
+  left: 96%;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+}
+
+.camera-switch-button{
+  position: fixed;
+  top: 65%;
+  left: 96%;
+  padding: 1%;
+  border-radius: 40%;
+  color: #ffffff;
+  background-color: #129edf;
+  border-color: #ffffff;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+}

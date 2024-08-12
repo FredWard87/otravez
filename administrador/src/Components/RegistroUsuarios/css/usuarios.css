@@ -1,0 +1,50 @@
+/* CSS */
+.registro-container {
+  background-color: #86DC54;
+  padding: 20px;
+  border-radius: 5px;
+  max-width: 600px;
+  height: 100px;
+  margin: 0 auto;
+}
+
+.registro-form {
+  background-color: #FFFD70;
+  padding: 20px;
+  border-radius: 5px;
+  border: 2px solid #fff; /* Agregar borde blanco */
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group select { /* Aplicar el estilo al selector de tipo de usuario */
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  border: 1px solid #ccc; /* Añadir un borde para hacerlo más visible */
+  border-radius: 5px; /* Redondear los bordes */
+  background-color: #fff; /* Fondo blanco */
+}
+
+.btn-registrar-us {
+  background-color: #33CC33;
+  color: white;
+  padding: 10px 20px; /* Ajustar el relleno para que sea mediano */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: auto; /* Permitir que el ancho se ajuste automáticamente al contenido */
+  display: inline-block; /* Mostrar como bloque en línea */
+  margin-left: 464px; /* Mover el botón a la derecha */
+}
+.btn-registrar-us:hover {
+  background-color: #181818;
+}

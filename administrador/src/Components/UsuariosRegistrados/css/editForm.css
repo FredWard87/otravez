@@ -1,0 +1,61 @@
+.modal-content.edit-modal-content {
+  background-color: #f0f8ff; /* Azul claro */
+  border: 2px solid #007bff; /* Azul */
+  border-radius: 10px;
+  padding: 20px;
+  width: 90%;
+  max-width: 500px;
+  max-height: 70vh; /* Altura máxima del modal */
+  height: auto;
+  color: black;
+  margin: auto;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  display: flex;
+  flex-direction: column;
+}
+
+.edit-modal-body {
+  overflow-y: auto;
+  max-height: calc(90vh - 80px); /* Ajuste para el padding y otros contenidos */
+  padding-right: 10px; /* Evita que el contenido se corte detrás de la barra de desplazamiento */
+}
+
+.edit-form .form-group {
+  margin-bottom: 15px;
+}
+
+.edit-form .form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.edit-form .form-group input {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.edit-form .btn-guardar {
+  background-color: #007bff; /* Azul */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-top: 15px; /* Añadido margen superior para el botón */
+}
+
+.edit-form .btn-guardar:hover {
+  background-color: #0056b3; /* Azul más oscuro */
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 24px;
+  cursor: pointer;
+}

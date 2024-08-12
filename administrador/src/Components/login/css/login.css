@@ -1,0 +1,151 @@
+body {
+    background-color: #a8fc9a;
+}
+
+.login-container-all{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.login-container {
+    width: 90%;
+    max-width: 400px; /* Tamaño máximo del contenedor */
+    height: 400px; 
+    padding: 20px;
+    background-color: #ffffff; 
+    border: 3px solid #000000;
+    border-radius: 3%; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    text-align: center; 
+}
+
+.login-container h2 {
+    margin-bottom: 20px;
+    color: #228b22; /* Color de texto verde oscuro */
+}
+
+.login-form .form-group {
+    margin-bottom: 50px;
+}
+
+.espacio {
+    margin-bottom: 60px;
+}
+
+.login-form label {
+    display: none; /* Oculta las etiquetas de los campos */
+}
+
+.error-message {
+    color: red;
+    font-weight: bold;
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    text-align: center;
+    margin: 0 auto 20px auto;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+    width: 90%;
+    padding: 12px;
+    border: 1px solid #228b22; /* Borde verde */
+    border-radius: 5px;
+    box-sizing: border-box;
+    text-align: center; /* Centra el texto en el campo de entrada */
+    font-size: 16px; /* Aumenta el tamaño del texto */
+    background-color: #ffffff; /* Fondo blanco para los campos de entrada */
+}
+
+.btn-login {
+    display: inline-block;
+    padding: 15px 30px; /* Ajusta el tamaño del botón */
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 25px; /* Borde redondeado */
+    background-color: #00B096; /* Fondo verde */
+    color: #ffffff; /* Texto blanco */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Transición suave */
+    width: 90%; /* Ancho completo del botón */
+}
+
+.btn-login:hover {
+    background-color: #37D70F; 
+}
+
+.error-message {
+    color: red;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.logo-empresa-login {
+    height: auto;
+    max-width: 60%;
+    border-radius: 10px;
+    margin: 0 auto 20px auto; 
+    display: block;
+}
+
+/* Consultas de medios para pantallas pequeñas */
+@media (max-width: 768px) {
+    .login-container {
+        width: 90%;
+        max-width: 300px; /* Tamaño máximo para pantallas pequeñas */
+        padding: 15px;
+    }
+
+    .login-form input[type="email"],
+    .login-form input[type="password"] {
+        font-size: 14px; /* Reduce el tamaño del texto para pantallas pequeñas */
+    }
+
+    .btn-login {
+        padding: 10px 20px; /* Ajusta el tamaño del botón */
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .login-container {
+        width: 90%;
+        height: 370px; 
+        max-width: 250px; 
+        padding: 10px;
+    }
+
+    .login-form input[type="email"],
+    .login-form input[type="password"] {
+        font-size: 12px; 
+    }
+
+    .btn-login {
+        padding: 15px 16px;
+        font-size: 12px;
+    }
+
+    .logo-empresa-login{
+        max-width: 75%;
+    }
+
+    .login-form .form-group {
+        margin-bottom: 40px;
+    }
+}
+
+.tipo-usuario{
+    margin-top: -10px;
+    margin-bottom: -40px;
+    font-weight: bold;
+    font-display: flex;
+}
