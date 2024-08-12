@@ -1,5 +1,5 @@
 const Usuarios = require('../models/usuarioSchema');
-const transporter = require('../emailConfig');
+const transporter = require('../emailconfig');
 const bcrypt = require('bcryptjs');
 
 
