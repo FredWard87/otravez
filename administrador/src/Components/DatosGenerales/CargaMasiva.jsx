@@ -75,7 +75,7 @@ const CargaMasiva = () => {
         Duracion: mainData.Duracion,
         Departamento: mainData.Departamento,
         AreasAudi: mainData.AreasAudi,
-        Auditados: [], // Inicializa como un array vacío
+        Auditados: [], // Cambiado a array
         AuditorLider: mainData.AuditorLider,
         AuditorLiderEmail: mainData.AuditorLiderEmail,
         EquipoAuditor: [],
@@ -102,13 +102,6 @@ const CargaMasiva = () => {
       const processedPrograms = new Set();
 
       jsonData.forEach(row => {
-        // Añadir valores en `Auditados`
-        if (row.Auditados) {
-          if (!currentAudit.Auditados.includes(row.Auditados)) {
-            currentAudit.Auditados.push(row.Auditados);
-          }
-        }
-
         if (row.Programa_Nombre && !processedPrograms.has(row.Programa_Nombre)) {
           // Añadir el programa anterior si existe
           if (programa.Nombre) {
@@ -140,6 +133,13 @@ const CargaMasiva = () => {
           currentAudit.EquipoAuditor.push({
             Nombre: row.EquipoAuditor_Nombre,
             Correo: row.EquipoAuditor_Correo
+          });
+        }
+
+        // Procesar Auditados si está presente
+        if (row.Auditados_Nombre) {
+          currentAudit.Auditados.push({
+            Nombre: row.Auditados_Nombre
           });
         }
       });
