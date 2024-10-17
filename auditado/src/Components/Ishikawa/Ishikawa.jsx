@@ -85,6 +85,7 @@ const Ishikawa = () => {
               setDescripcion(descripcionEncontrada);
               setRequisito(descripcionEncontrada.Requisito);
               setHallazgo(descripcionEncontrada.Hallazgo);
+              setProblema(descripcionEncontrada.Observacion);
               setAuditados(descripcionEncontrada.Auditados);
             }
           }
@@ -565,9 +566,6 @@ const mostrarCargando = () => {
   });
 };
 
-const handleProblemaChange = (e) => {
-  setProblema(e.target.value); // Actualiza el estado con el valor ingresado
-};
 
 
 const ocultarCargando = () => {
@@ -655,7 +653,6 @@ useEffect(() => {
             <h2 key={index}>Problema:
               <textarea type="text" className="problema-input" name='problema' 
               value={(descripcion?.Observacion && datos?.PuntuacionMaxima) ? `${descripcion.Observacion}` : `${descripcion.Hallazgo}`}
-              onChange={handleProblemaChange}
               style={{fontSize:'20px'}} placeholder="Agregar problema. . ." required disabled={revisado}>
               </textarea>
             </h2>
